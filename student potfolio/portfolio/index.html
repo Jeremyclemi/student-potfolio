@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content="Academic portfolio and web projects for Clem Iwegbu Oluchukwuka, studying BSc Data Science, 100 Level at MIVA Open University for course COS 106.">
+  <title>Home | Clem Iwegbu Oluchukwuka - Academic Portfolio (COS 106)</title>
+  <link rel="stylesheet" href="css/style.css?v=20261114">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION (Flexbox, Mobile Hamburger Menu)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Home page">
+        <span class="brand-name">Clem Iwegbu Oluchukwuka</span>
+        <span class="brand-tag">COS 106 Portfolio • MIVA Open University</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle Button (Accessible via ARIA) -->
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="planner.html" class="nav-link">Planner</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT: HOME PAGE
+       ====================================================================== -->
+  <main class="container">
+    
+    <!-- Hero Section (Flexbox 2-Column Layout) -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <span class="badge badge-accent hero-eyebrow">COS 106: Introduction to Web Technologies</span>
+        <h1 id="hero-heading" class="hero-title">
+          Hello, I'm <br><span class="highlight">Clem Iwegbu Oluchukwuka</span>
+        </h1>
+        <p class="hero-subtitle">BSc Data Science, 100 Level, MIVA Open University</p>
+        <p class="hero-bio">
+          Welcome to my academic portfolio. I am a passionate Data Science student developing solid foundational 
+          skills in web standards, semantic HTML5, responsive CSS3 architectures, and interactive JavaScript programming. 
+          Explore my coursework projects, academic schedule, and learning milestones below.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+          <a href="planner.html" class="btn btn-secondary">Open Task Planner</a>
+          <a href="contact.html" class="btn btn-accent">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <figure class="profile-card">
+          <div class="profile-img-wrap">
+            <img src="images/profile-clem.jpg?v=20261114" alt="Profile portrait of Clem Iwegbu Oluchukwuka" class="profile-img" loading="eager" decoding="sync">
+          </div>
+          <figcaption class="profile-caption">Clem Iwegbu Oluchukwuka • 100 Level Data Science</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Multimedia Introduction Section (HTML5 Video & Audio Elements with Controls & Caption) -->
+    <section class="media-intro-section" aria-labelledby="media-heading">
+      <h2 id="media-heading" class="section-title">Course Introduction & Overview</h2>
+      <p style="color: var(--text-muted); margin-bottom: var(--space-md);">
+        Below is my official multimedia introduction recorded for the COS 106 course defence. It highlights my academic background, course aspirations, and an overview of this portfolio build.
+      </p>
+
+      <div class="media-wrapper">
+        <!-- HTML5 Video Player with Controls and Poster -->
+        <div class="video-container">
+          <video controls poster="images/video-poster.jpg" class="intro-video" preload="metadata">
+            <source src="media/intro.mp4" type="video/mp4">
+            <source src="media/intro.wav" type="audio/wav">
+            Your browser does not support the video tag. Please view or listen using the audio player below.
+          </video>
+        </div>
+
+        <!-- HTML5 Audio Alternative Player -->
+        <div class="audio-box">
+          <p>🎧 Audio Voice-over Alternative:</p>
+          <audio controls class="intro-audio" preload="metadata">
+            <source src="media/intro.mp3" type="audio/mpeg">
+            <source src="media/intro.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Accessible Caption & Transcript -->
+        <div class="media-caption-box">
+          <strong>Video / Audio Transcript & Objectives:</strong>
+          <p>
+            "Hello and welcome to my COS 106 portfolio presentation at MIVA Open University. My name is Clem Iwegbu Oluchukwuka. 
+            Throughout this course, I have mastered the foundational building blocks of the modern web: semantic HTML5 for clean document structure, 
+            CSS3 Flexbox and Grid for mobile-first responsive interfaces, and plain JavaScript (ES6) for DOM manipulation and interactive state management. 
+            Thank you for reviewing my academic submission."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section (Quick links to major areas) -->
+    <section aria-labelledby="highlights-heading" style="margin-bottom: var(--space-xl);">
+      <h2 id="highlights-heading" class="section-title">Portfolio Highlights</h2>
+      <div class="highlights-grid">
+        
+        <article class="highlight-card">
+          <span class="highlight-icon" aria-hidden="true">🎓</span>
+          <h3 class="highlight-title">About & Education</h3>
+          <p class="highlight-text">
+            Discover my educational background presented in a structured table, technical skills with proficiency ratings, and career aspirations.
+          </p>
+          <a href="about.html" class="btn btn-secondary">Read Bio & Skills &rarr;</a>
+        </article>
+
+        <article class="highlight-card">
+          <span class="highlight-icon" aria-hidden="true">💻</span>
+          <h3 class="highlight-title">Coursework Projects</h3>
+          <p class="highlight-text">
+            Browse through my practical web applications built using pure HTML, CSS Grid, and JavaScript with live demo and repository links.
+          </p>
+          <a href="projects.html" class="btn btn-secondary">View All Projects &rarr;</a>
+        </article>
+
+        <article class="highlight-card">
+          <span class="highlight-icon" aria-hidden="true">📅</span>
+          <h3 class="highlight-title">Academic Planner</h3>
+          <p class="highlight-text">
+            An interactive task manager allowing students to add tasks, toggle completion states, and delete records with automatic browser storage.
+          </p>
+          <a href="planner.html" class="btn btn-secondary">Launch Planner &rarr;</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (Consistent Across All Pages)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h3>Clem Iwegbu Oluchukwuka</h3>
+          <p>BSc Data Science, 100 Level</p>
+          <p>MIVA Open University • Department of Computing</p>
+          <p style="margin-top: var(--space-xs); font-size: 0.8rem; color: #94a3b8;">
+            COS 106: Introduction to Web Technologies Final Project
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <p style="font-size: 0.9rem; margin-bottom: var(--space-xs);">
+            Email: <a href="mailto:o.clem-iwegbu0829@miva.edu.ng" style="color: var(--accent-color);">o.clem-iwegbu0829@miva.edu.ng</a>
+          </p>
+          <p style="font-size: 0.9rem;">
+            GitHub: <a href="[YOUR GITHUB URL]" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color);">[YOUR GITHUB URL]</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Clem Iwegbu Oluchukwuka. Built with plain HTML, CSS & JavaScript.</p>
+        <p>Created for academic assessment in COS 106. Hosted on GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JavaScript (Mobile menu toggle, active nav, load animations) -->
+  <script src="js/main.js"></script>
+</body>
+</html>

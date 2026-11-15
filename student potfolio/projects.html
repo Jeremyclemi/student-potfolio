@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coursework and practical web development projects completed by Clem Iwegbu Oluchukwuka for COS 106 at MIVA Open University.">
+  <title>Projects | Clem Iwegbu Oluchukwuka - Academic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Home page">
+        <span class="brand-name">Clem Iwegbu Oluchukwuka</span>
+        <span class="brand-tag">COS 106 Portfolio • MIVA Open University</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link active" aria-current="page">Project</a></li>
+          <li class="nav-item"><a href="planner.html" class="nav-link">Planner</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT: PROJECTS SHOWCASE (CSS GRID)
+       ====================================================================== -->
+  <main class="container">
+    
+    <!-- Page Header -->
+    <header class="page-header">
+      <h1 class="page-title">Coursework & Projects</h1>
+      <p class="page-subtitle">
+        A curated collection of web applications developed using pure HTML5, CSS3 Grid/Flexbox, and vanilla JavaScript.
+      </p>
+    </header>
+
+    <!-- CSS Grid Container for Project Cards -->
+    <section aria-label="Projects Showcase Grid">
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="images/project1.png" alt="Screenshot preview of Academic GPA Calculator interface" class="project-image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">Academic Utility</span>
+            <h2 class="project-title">MIVA Academic GPA Calculator</h2>
+            <p class="project-description">
+              A specialized client-side calculator engineered for university students. Computes weighted Grade Point Average (GPA) and cumulative CGPA based on course units, test assessments, and exam scores following MIVA university grading bands.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5 Semantic</span>
+              <span class="project-tag">CSS Flexbox</span>
+              <span class="project-tag">JavaScript Math</span>
+            </div>
+            <div class="project-links">
+              <a href="#gpa-demo" class="btn btn-primary" title="Launch live application demo">Live Demo</a>
+              <a href="https://github.com/[YOUR GITHUB URL]" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="View source code on GitHub">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="images/project2.png" alt="Screenshot preview of Campus Resource and Study Group platform" class="project-image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">Collaborative Platform</span>
+            <h2 class="project-title">Campus Resource & Study Hub</h2>
+            <p class="project-description">
+              A responsive directory enabling computer science students to organize virtual study groups, share verified course lecture notes, and filter past assessment revision questions with real-time DOM filtering.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS Grid</span>
+              <span class="project-tag">DOM Filtering</span>
+            </div>
+            <div class="project-links">
+              <a href="#resource-demo" class="btn btn-primary" title="Launch live application demo">Live Demo</a>
+              <a href="https://github.com/[YOUR GITHUB URL]" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="View source code on GitHub">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="images/project3.png" alt="Screenshot preview of Student Budget Tracker dashboard" class="project-image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">Finance & Productivity</span>
+            <h2 class="project-title">Student Allowance & Budget Tracker</h2>
+            <p class="project-description">
+              A personal finance web tool designed to help undergraduates track semester allowances, categorize campus spending (textbooks, meal plans, transportation), and view real-time expense totals using browser localStorage.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5 Forms</span>
+              <span class="project-tag">CSS Variables</span>
+              <span class="project-tag">LocalStorage API</span>
+            </div>
+            <div class="project-links">
+              <a href="#budget-demo" class="btn btn-primary" title="Launch live application demo">Live Demo</a>
+              <a href="https://github.com/[YOUR GITHUB URL]" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="View source code on GitHub">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 (Bonus Project demonstrating extra depth) -->
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="images/project4.png" alt="Screenshot preview of Interactive Web Tech Cheatsheet" class="project-image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">Educational Resource</span>
+            <h2 class="project-title">COS 106 Interactive Cheatsheet</h2>
+            <p class="project-description">
+              A quick-reference study companion for 100-level classmates containing interactive code snippets, HTML semantic tag explanations, CSS layout visualizers, and essential JavaScript DOM method references.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Responsive CSS</span>
+              <span class="project-tag">JavaScript Search</span>
+              <span class="project-tag">Web Accessibility</span>
+            </div>
+            <div class="project-links">
+              <a href="#cheatsheet-demo" class="btn btn-primary" title="Launch live application demo">Live Demo</a>
+              <a href="https://github.com/[YOUR GITHUB URL]" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="View source code on GitHub">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Clem Iwegbu Oluchukwuka</h3>
+          <p>BSc Data Science, 100 Level</p>
+          <p>MIVA Open University • Department of Computing</p>
+          <p style="margin-top: var(--space-xs); font-size: 0.8rem; color: #94a3b8;">
+            COS 106: Introduction to Web Technologies Final Project
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <p style="font-size: 0.9rem; margin-bottom: var(--space-xs);">
+            Email: <a href="mailto:o.clem-iwegbu0829@miva.edu.ng" style="color: var(--accent-color);">o.clem-iwegbu0829@miva.edu.ng</a>
+          </p>
+          <p style="font-size: 0.9rem;">
+            GitHub: <a href="[YOUR GITHUB URL]" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color);">[YOUR GITHUB URL]</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Clem Iwegbu Oluchukwuka. Built with plain HTML, CSS & JavaScript.</p>
+        <p>Created for academic assessment in COS 106. Hosted on GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
